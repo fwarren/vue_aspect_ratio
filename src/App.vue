@@ -1,6 +1,6 @@
 <template>
   <div :style="window.style">
-    <div style="width: 1680px;height: 1050px;background-image: url('https://wallpapercave.com/wp/mvdjImO.jpg')">
+    <div :style="windowSize">
       <router-view/>
     </div>
   </div>
@@ -12,8 +12,8 @@ export default {
   data: function () {
     return {
       window: {
-        width: 1680,
-        height: 1050,
+        width: 1920,
+        height: 1080,
         style: ''
       }
     }
@@ -27,7 +27,7 @@ export default {
   },
   computed: {
     windowSize: function () {
-      return `width: ${this.window.width};height: ${this.window.height}`
+      return `width: ${this.window.width}px;height: ${this.window.height}px;`
     }
   },
   methods: {
