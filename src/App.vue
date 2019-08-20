@@ -27,7 +27,7 @@ export default {
   },
   computed: {
     windowSize: function () {
-      return `width: ${this.window.width}px;height: ${this.window.height}px;`
+      return `width: ${this.window.width}px;height: ${this.window.height}px;background: #555;`
     }
   },
   methods: {
