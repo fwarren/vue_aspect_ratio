@@ -45,7 +45,7 @@ export default {
         // extra width so zoom for height ratio
         scale = appHeight / this.window.height
       }
-      this.window.style = `zoom: ${scale};`
+      this.window.style = `zoom: ${Math.min(scale, 1)};`
     }
   }
 }
